@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitnesReview - Обзор фитнес-приложений</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-bg" aria-hidden="true">
+      <span class="bg-orb bg-orb-1"></span>
+      <span class="bg-orb bg-orb-2"></span>
+      <span class="bg-grid"></span>
+    </div>
+
+    <header class="hero">
+      <nav class="top-nav container">
+        <a href="index.html" class="brand">FitnesReview</a>
+        <div class="nav-links">
+          <a data-page="home" data-i18n="nav.home" href="index.html">Главная</a>
+          <a data-page="apps" data-i18n="nav.catalog" href="apps.html">Каталог</a>
+          <a data-page="compare" data-i18n="nav.compare" href="compare.html">Сравнения</a>
+          <a data-page="guides" data-i18n="nav.guides" href="guides.html">Гайды</a>
+          <a data-page="about" data-i18n="nav.about" href="about.html">О проекте</a>
+        </div>
+        <div class="nav-actions">
+          <a class="nav-cta" data-i18n="nav.cta" href="apps.html">Выбрать приложение</a>
+          <button id="langToggle" class="lang-toggle" type="button">EN</button>
+        </div>
+      </nav>
+
+      <section class="container hero-content">
+        <div class="hero-copy">
+          <p class="badge" data-i18n="hero.badge">Редакционный каталог fitness apps</p>
+          <h1 data-i18n="hero.title">Выбери фитнес-приложение под свою цель, ритм жизни и формат тренировок</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            FitnesReview собирает в одном месте приложения для зала, дома, бега, йоги, питания и восстановления. Мы объясняем не только что умеет сервис, но и кому он реально подходит.
+          </p>
+          <div class="hero-actions">
+            <a href="apps.html" class="btn btn-primary" data-i18n="hero.primary">Открыть каталог</a>
+            <a href="compare.html" class="btn btn-secondary" data-i18n="hero.secondary">Сравнить решения</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="hero-stat">
+            <strong>11</strong>
+            <span data-i18n="hero.stat1">приложений разобрано</span>
+          </div>
+          <div class="hero-stat">
+            <strong>8</strong>
+            <span data-i18n="hero.stat2">направлений фитнеса</span>
+          </div>
+          <div class="hero-stat">
+            <strong>4</strong>
+            <span data-i18n="hero.stat3">ключевых критериев оценки</span>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main class="container space-y">
+      <section>
+        <h2 data-i18n="section.popular">Популярные приложения</h2>
+        <div id="featuredGrid" class="cards-grid"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section.highlights">Почему сайт стал полезнее</h2>
+        <div id="highlightsGrid" class="info-grid"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section.categories">Категории</h2>
+        <div id="categoryGrid" class="category-grid"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section.spotlight">Быстрый разбор: что выбрать под свой сценарий</h2>
+        <div id="spotlightGrid" class="info-grid spotlight-grid"></div>
+      </section>
+
+      <section class="stats-panel">
+        <div>
+          <strong>11</strong>
+          <span data-i18n="stats.apps">приложений в базе</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span data-i18n="stats.guides">гайда и сценария выбора</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span data-i18n="stats.updated">критериев оценки</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section.metrics">На что мы смотрим в обзорах</h2>
+        <div id="metricsGrid" class="info-grid metrics-grid"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section.guides">С чего начать</h2>
+        <div id="guidesPreview" class="cards-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 FitnesReview</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
